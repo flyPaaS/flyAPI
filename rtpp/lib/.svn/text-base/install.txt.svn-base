@@ -1,0 +1,6 @@
+cd jsoncpp-master/src/lib_json
+g++ -c *.cpp -I ../../include
+ar -rcs libjsoncpp.a *.o
+cp libjsoncpp.a /usr/lib
+cp ../../include/* /usr/include -a
+cd -
